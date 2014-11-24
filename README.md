@@ -1,16 +1,16 @@
 ﻿# Sitehell
 ========
 Welcome, To whom it may concern,
-1.For whom
-2.Introduction
-3.Copyright
+[1.For whom](#forwhom)
+[2.Introduction](#introduction)
+[3.Copyright](#copyright)
 
-1.For Whom?
+## For Whom?
 Yon controller is created for people who need that thing, but can't create it or don't have enough time to create it yourself.
  
 Sitehell help with editing sites by means of editing one file rather than edit everyone subpag, so you really gain a lot of time.
 
-2.Introduction
+## Introduction
 To configure Sitehell open file index.php in main folder,
 $dbip = '#'; // ip database
 
@@ -42,7 +42,7 @@ $bot = 'footer.php'; // Bottom of site, file name
 
 The attachment is in html and it show how it should looks.
 
-3.Copyright
+## Copyright
 Actual version 0.01 still updating.
 I hope, that Sitehell will give you more time. 
 In conclusion id like to add description who made it in your site.
