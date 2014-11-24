@@ -1,46 +1,49 @@
-Sitehell
+﻿# Sitehell
 ========
-Witam bardzo serdecznie.
-Mam przyjemność przedstawienia wam mojego autorskiego kontrolera php którego nazwałem "Sitehell".
+Welcome, To whom it may concern,
+1.For whom
+2.Introduction
+3.Copyright
+
+1.For Whom?
+Yon controller is created for people who need that thing, but can't create it or don't have enough time to create it yourself.
  
-Owy kontroler jest stworzony dla osób które potrzebują takiego cudeńka jednak nie potrafią stworzyć go samemu lub bo prostu tworzą coś na szybko i nie mają czasu na stworzenie go samemu.
- 
-Sitehell pomaga w edytowania strony po przez edytowania jednego pliku zamiast edytowania każdej podstrony dzięki czemu zyskujemy na prawdę sporo czasu.
- 
-Aby poprawnie skonfigurować Sitehell'a wystarczy otworzyć plik index.php znajdujący się w głównym folderze,
-$dbip = '#'; // ip bazy danych
+Sitehell help with editing sites by means of editing one file rather than edit everyone subpag, so you really gain a lot of time.
 
-$dbuser = '#'; // Użytkownik bazy danych
+2.Introduction
+To configure Sitehell open file index.php in main folder,
+$dbip = '#'; // ip database
 
-$dbpass = '#'; // Hasło bazy danych
+$dbuser = '#'; // user database
 
-$dbselect = '#'; //Wybranie bazy danych
+$dbpass = '#'; // password database
 
-
-$firstTable = 'index'; // Pierwsza tabela w mysql Używać za pomocą $user[''];
-
-$secondTable = ''; // Pierwsza tabela w mysql Używać za pomocą $user[''];
+$dbselect = '#'; // select database
 
 
-$first = 'view'; // Pierwszy folder
+$firstTable = 'index'; // First table in mysql use with $user[''];
 
-$second = 'layout'; // Drugi folder
+$secondTable = ''; // Second table in mysql use with $user[''];
 
-$three = 'index'; // Trzeci folder
+
+$first = 'view'; // First folder
+
+$second = 'layout'; // Second folder
+
+$three = 'index'; // Third folder
 
 //etcetra etcetra
 
-$controller = 'index'; //nazwaprojektu, co ma wczytywać. BEZ .PHP
+$controller = 'index'; //file name, what you want to load. without .PHP
 
-$top = 'header.php'; // Góra strony, nazwa pliku
+$top = 'header.php'; // Top of site, file name
 
-$bot = 'footer.php'; // Dół strony, nazwa pliku
+$bot = 'footer.php'; // Bottom of site, file name
 
-Całą resztę strony jak już będzie ułożona zależy do was jednak załączyłem do środka przykład html'owy jak to powinno wyglądać.
+The attachment is in html and it show how it should looks.
 
-
-Aktualna wersja 0.01 i wciąż nad nią pracuję.
- 
-Mam nadzieję że Sitehell skróci wam czas pracy do minimum.
- 
-Jedyne czego wymagam od was to gdzieś w kodzie strony dodać że wasza strona używa Sitehell'a by RosheD...
+3.Copyright
+Actual version 0.01 still updating.
+I hope, that Sitehell will give you more time. 
+In conclusion id like to add description who made it in your site.
+Yours faithfully RosheD.
