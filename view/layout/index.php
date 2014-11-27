@@ -1,17 +1,10 @@
 <?php
-//Project by
-/*
-######                              ######  
-#     #  ####   ####  #    # ###### #     # 
-#     # #    # #      #    # #      #     # 
-######  #    #  ####  ###### #####  #     # 
-#   #   #    #      # #    # #      #     # 
-#     #  ####   ####  #    # ###### ######  
-*/
-// Top strony który ma wczytać
-include($first.'/'.$second.'/'.$top);
-//co ma wczytac
-include($first."/".$three.'/'.$view.'.php');
-//bot strony który ma wczytać
-include($first.'/'.$second.'/'.$bot);
+//Project by https://github.com/roshed
+
+// Top page load.
+require($first.'/'.$second.'/'.$top);
+//Controller get load.
+require($first."/".$three.'/'.$view.'.php');
+//Bottom page load.
+require($first.'/'.$second.'/'.$bot);
 ?>

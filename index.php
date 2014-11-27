@@ -1,46 +1,47 @@
 <?php 
-//Project by
-/*
-######                              ######  
-#     #  ####   ####  #    # ###### #     # 
-#     # #    # #      #    # #      #     # 
-######  #    #  ####  ###### #####  #     # 
-#   #   #    #      # #    # #      #     # 
-#     #  ####   ####  #    # ###### ######  
-*/
+//Project by https://github.com/roshed
+//Let see config.php
+include('config.php');
+include('view/oop/load.php'); //OOP function
 session_start();
-$dbip = '#'; // ip bazy danych
-$dbuser = '#'; // Użytkownik bazy danych
-$dbpass = '#'; // Hasło bazy danych
-$dbselect = '#'; //Wybranie bazy danych
 
-$firstTable = 'index'; // Pierwsza tabela w mysql Używać za pomocą $user[''];
-$secondTable = ''; // Pierwsza tabela w mysql Używać za pomocą $user[''];
+//documents folder
+$first = 'view'; // First folder in sitehell libelary.
+$second = 'layout'; // Second folder in sitehell libelary.
+$three = 'index'; // Third folder in sitehell libelary.
 
-$first = 'view'; // Pierwszy folder
-$second = 'layout'; // Drugi folder
-$three = 'index'; // Trzeci folder
-//etcetra etcetra
-$controller = 'index'; //nazwa projektu, co ma wczytywać. BEZ .PHP
-$top = 'header.php'; // Góra strony, nazwa pliku
-$bot = 'footer.php'; // Dół strony, nazwa pliku
+//end navigation
+//Start controller
+$controller = 'index'; //Name project in $three folder, default is "index".
+$top = 'header.php'; // Header file start in doctype, end </head>.
+$bot = 'footer.php'; //Bottom doctype, start <footer> end </html>.
 
+/*
+Core Sitehell
+*/
 $layout = ($first.'/'.$second.'/');
 
-@include ('config.php'); //Wczytanie ustawień
-@include ('db.php'); // Wczytanie bazy danych
-// Jeśli index jest pusty to wczytaj index.php
+//if get=view is empty, load index.php
 $view = empty($_GET['view']) ? 'index' : $_GET['view']; 
 
+//view to the get
+//example is address.com/view=library
 switch($view) {
 	case 'index' :
 
 	break;
 
-	case 'test' :
+	case 'library' :
 
 	break;
 }
-//Wczytanie kontrolera głównego
-include ($first.'/'.$second.'/'.$controller.'.php');
+//And you must add file.php to $first/$three
+//Difoult 
+
+//Load main controller.
+require($first.'/'.$second.'/'.$controller.'.php');
+
+/*
+End-Core Sitehell
+*/
 ?>

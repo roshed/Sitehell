@@ -15,7 +15,7 @@ Yon controller is created for people who need that thing, but can't create it or
 Sitehell help with editing sites by means of editing one file rather than edit everyone subpag, so you really gain a lot of time.
 
 ## Introduction
-To configure Sitehell open file index.php in main folder,
+To configure Sitehell open file config.php in main folder,
 `
 $dbip = '#'; // ip database
 
@@ -24,18 +24,6 @@ $dbuser = '#'; // user database
 $dbpass = '#'; // password database
 
 $dbselect = '#'; // select database
-
-
-$firstTable = 'index'; // First table in mysql use with $user[''];
-
-$secondTable = ''; // Second table in mysql use with $user[''];
-
-
-$first = 'view'; // First folder
-
-$second = 'layout'; // Second folder
-
-$three = 'index'; // Third folder
 
 //etcetra etcetra
 
@@ -47,8 +35,15 @@ $bot = 'footer.php'; // Bottom of site, file name`
 
 The attachment is in html and it show how it should looks.
 
+## Small Tutorial
+How to connect with the database?
+Add in your code:
+$connect = new Database;
+$connect -> connect($dbip, $dbselect, $dbuser, $dbpass);
+insert/select etc incomming!
+
 ## Copyright
-Actual version 0.01 still updating.
+Actual version 0.02 still updating.
 I hope, that Sitehell will give you more time. 
 In conclusion id like to add description who made it in your site.
 Yours faithfully RosheD.
