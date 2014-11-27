@@ -1,6 +1,5 @@
 ﻿# Sitehell
 ========
-Welcome, To whom it may concern.
 ## Menu
 [1.For whom](#forwhom)
 <br/>
