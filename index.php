@@ -31,6 +31,10 @@ switch($view) {
 	case 'library' :
 
 	break;
+
+	default: //if get not in switch
+		$view='index';
+	break;
 }
 //And you must add file.php to $first/$three
 //Difoult 
