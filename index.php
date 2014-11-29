@@ -1,6 +1,5 @@
 <?php 
 //Project by https://github.com/roshed
-//Let see config.php
 session_start();
 
 //documents folder
