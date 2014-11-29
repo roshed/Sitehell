@@ -1,8 +1,6 @@
 <?php 
 //Project by https://github.com/roshed
 //Let see config.php
-include('config.php');
-include('view/oop/load.php'); //OOP function
 session_start();
 
 //documents folder
@@ -34,9 +32,6 @@ switch($view) {
 	case 'library' :
 
 	break;
-
-	default:
-       $view='index';
 }
 //And you must add file.php to $first/$three
 //Difoult 
