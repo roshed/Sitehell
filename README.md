@@ -1,5 +1,5 @@
 ## Sitehell v0.3.2 
-
+[View the changelog](https://github.com/roshed/sitehell/releases)
 #### How to using
 * First, import the sql to server sql
 * Second you must configure options.php in root folder.
