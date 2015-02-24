@@ -4,6 +4,7 @@ class mysql extends engine{
 
 	}
 	function select($what,$what2){
+		$what = mysqli_real_escape_string($this->handle,$what);
 		$query = mysqli_query($this->handle,"SELECT * FROM $what") or die(mysqli_error($this->handle));
 
 		$tkn = mysqli_fetch_array($query);

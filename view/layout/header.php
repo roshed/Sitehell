@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-  <title>Title</title>
+  <title><?php echo $mysql->select('options','Title');?></title>
 <meta name="description" content="Free Web Sitehell">
 <meta name="keywords" content="HTML,CSS,XML,JavaScript,JQuery,PHP,Controler">
 <meta name="author" content="Mariusz RosheD Kauczor">

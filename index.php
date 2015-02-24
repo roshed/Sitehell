@@ -8,7 +8,6 @@ require_once('options.php');
 require_once('engine.php');
 require_once('load.php');
 
-$server = $mysql->select('options','server');
 //documents folder
 $first = 'view'; // First folder in sitehell libelary.
 $second = 'layout'; // Second folder in sitehell libelary.
