@@ -1,7 +1,14 @@
 <?php 
 //Project by https://github.com/roshed
 session_start();
+error_reporting(E_ALL); // poziom raportowania, http://pl.php.net/manual/pl/function.error-reporting.php
+ini_set('display_errors', 1);
 
+require_once('options.php');
+require_once('engine.php');
+require_once('load.php');
+
+$server = $mysql->select('options','server');
 //documents folder
 $first = 'view'; // First folder in sitehell libelary.
 $second = 'layout'; // Second folder in sitehell libelary.
@@ -28,7 +35,7 @@ switch($view) {
 
 	break;
 
-	case 'library' :
+	case 'login' :
 
 	break;
 
@@ -41,7 +48,6 @@ switch($view) {
 
 //Load main controller.
 require($first.'/'.$second.'/'.$controller.'.php');
-
 /*
 End-Core Sitehell
 */
